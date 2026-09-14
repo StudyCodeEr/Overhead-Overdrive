@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Codes\Scanner.cs" />
+    <Compile Include="Assets\Codes\Hand.cs" />
     <Compile Include="Assets\Codes\PoolManager.cs" />
     <Compile Include="Assets\Codes\Player.cs" />
     <Compile Include="Assets\Codes\HUD.cs" />
@@ -73,7 +74,6 @@
     <Compile Include="Assets\Codes\Weapon.cs" />
     <Compile Include="Assets\Codes\Gear.cs" />
     <Compile Include="Assets\Codes\Bullet.cs" />
-    <Compile Include="Assets\Codes\Hand.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -86,10 +86,14 @@ public class Weapon : MonoBehaviour
                 break;
         }
 
-        // 4. Kích hoạt và gán Sprite bàn tay tương ứng với loại vũ khí (Cận chiến / Tầm xa)
-        Hand hand = player.hands[(int)data.itemType];
-        hand.sprite.sprite = data.hand;
-        hand.gameObject.SetActive(true);
+        // 4. Kích hoạt và gán Sprite bàn tay (Thêm kiểm tra an toàn tránh tràn mảng hands)
+        int handIndex = (int)data.itemType;
+        if (player.hands != null && handIndex < player.hands.Length)
+        {
+            Hand hand = player.hands[handIndex];
+            hand.sprite.sprite = data.hand;
+            hand.gameObject.SetActive(true);
+        }
     }
 
     void Batch()
