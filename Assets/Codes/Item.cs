@@ -1,3 +1,5 @@
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +12,8 @@ public class Item : MonoBehaviour
 
     Image icon;
     Text textLevel;
+    Text textName;
+    Text textDesc;
 
     void Awake()
     {
@@ -19,6 +23,32 @@ public class Item : MonoBehaviour
 
         Text[] texts = GetComponentsInChildren<Text>();
         textLevel = texts[0];
+        textName = texts[1];
+        textDesc = texts[2];
+        textName.text = data.itemName;
+    }
+
+    void OnEnable()
+    {
+        textLevel.text = "Lv." + (level + 1);
+
+        switch (data.itemType)
+        {
+            case ItemData.ItemType.Melee:
+            case ItemData.ItemType.Range:
+                // Truyền 2 tham số: {0} = % Sát thương, {1} = Số lượng/Số lần xuyên
+                textDesc.text = string.Format(data.itemDesc, data.damages[level] * 100, data.counts[level]);
+                break;
+            case ItemData.ItemType.Glove:
+            case ItemData.ItemType.Shoe:
+                // Truyền 1 tham số: {0} = % Tốc độ
+                textDesc.text = string.Format(data.itemDesc, data.damages[level] * 100);
+                break;
+            default:
+                // Vật phẩm hồi máu / trợ giúp: Gán trực tiếp chuỗi, không dùng string.Format
+                textDesc.text = data.itemDesc;
+                break;
+        }
     }
 
     void LateUpdate()

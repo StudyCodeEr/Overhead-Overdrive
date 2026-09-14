@@ -15,7 +15,7 @@ MonoBehaviour:
   itemType: 0
   itemId: 0
   itemName: Xeng
-  itemDesc: 
+  itemDesc: "T\u0103ng % s\xE1t th\u01B0\u01A1ng\nT\u0103ng  v\u1EADt th\u1EC3 xoay\n"
   itemIcon: {fileID: -181907988, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
   baseDamage: 4.5
   baseCount: 3
@@ -27,3 +27,4 @@ MonoBehaviour:
   - 3
   counts: 0100000001000000010000000100000002000000
   projectile: {fileID: 3715207897353096170, guid: 3b2088c87b67b10448723100704f15f8, type: 3}
+  hand: {fileID: 0}

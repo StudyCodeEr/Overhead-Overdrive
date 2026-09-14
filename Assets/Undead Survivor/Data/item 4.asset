@@ -15,7 +15,7 @@ MonoBehaviour:
   itemType: 4
   itemId: 4
   itemName: Nuoc
-  itemDesc: 
+  itemDesc: "T\u0103ng % s\xE1t th\u01B0\u01A1ng\nT\u0103ng  v\u1EADt th\u1EC3 xoay"
   itemIcon: {fileID: 927338625, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
   baseDamage: 0
   baseCount: 0
@@ -27,3 +27,4 @@ MonoBehaviour:
   - 0
   counts: 0000000000000000000000000000000000000000
   projectile: {fileID: 0}
+  hand: {fileID: 0}

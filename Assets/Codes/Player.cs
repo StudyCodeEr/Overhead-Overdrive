@@ -21,23 +21,40 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         scanner = GetComponent<Scanner>();
 
-        // Tự động lấy tất cả script Hand ở GameObject con (bao gồm cả các bàn tay đang bị ẩn)
         hands = GetComponentsInChildren<Hand>(true);
+    }
+
+    void Update()
+    {
+        if (!GameManager.instance.isLive)
+            return;
+
+        inputVec.x = Input.GetAxisRaw("Horizontal");
+        inputVec.y = Input.GetAxisRaw("Vertical");
     }
 
     void FixedUpdate()
     {
+        if (!GameManager.instance.isLive)
+            return;
+
         Vector2 nextVec = inputVec * speed * Time.fixedDeltaTime;
         rigid.MovePosition(rigid.position + nextVec);
     }
 
     void OnMove(InputValue value)
     {
+        if (!GameManager.instance.isLive)
+            return;
+
         inputVec = value.Get<Vector2>();
     }
 
     void LateUpdate()
     {
+        if (!GameManager.instance.isLive)
+            return;
+
         anim.SetFloat("Speed", inputVec.magnitude);
 
         if (inputVec.x != 0)

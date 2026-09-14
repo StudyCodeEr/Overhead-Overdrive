@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7F1D9D3C-4FC9-A6D7-F6E5-A316D89F206B}</ProjectGuid>
+    <ProjectGuid>{C9A8D511-EB31-2016-5989-D563F01E4669}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -74,6 +74,8 @@
     <Compile Include="Assets\Codes\Weapon.cs" />
     <Compile Include="Assets\Codes\Gear.cs" />
     <Compile Include="Assets\Codes\Bullet.cs" />
+    <Compile Include="Assets\Codes\LevelUp.cs" />
+    <Compile Include="Assets\levelUP.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
