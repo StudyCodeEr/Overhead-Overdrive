@@ -15,7 +15,8 @@ MonoBehaviour:
   itemType: 1
   itemId: 1
   itemName: Range
-  itemDesc: 
+  itemDesc: "T\u0103ng {0}% s\xE1t th\u01B0\u01A1ng.\n\u0110\u1ED9 xuy\xEAn th\u1EA5u
+    t\u0103ng {1}."
   itemIcon: {fileID: -205726582, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
   baseDamage: 3
   baseCount: 0

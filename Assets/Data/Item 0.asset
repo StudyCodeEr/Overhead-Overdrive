@@ -15,7 +15,8 @@ MonoBehaviour:
   itemType: 0
   itemId: 0
   itemName: Melee
-  itemDesc: 
+  itemDesc: "T\u0103ng {0}% s\xE1t th\u01B0\u01A1ng.\nTh\xEAm {1} x\u1EBBng th\u1EA7n
+    th\xE1nh."
   itemIcon: {fileID: -181907988, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
   baseDamage: 4.5
   baseCount: 3

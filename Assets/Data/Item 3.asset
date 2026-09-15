@@ -15,7 +15,7 @@ MonoBehaviour:
   itemType: 3
   itemId: 3
   itemName: Shoe
-  itemDesc: 
+  itemDesc: "T\u0103ng {0}% t\u1ED1c \u0111\u1ED9 di chuy\u1EC3n."
   itemIcon: {fileID: -966295699, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
   baseDamage: 0
   baseCount: 0
@@ -27,3 +27,4 @@ MonoBehaviour:
   - 0.5
   counts: 0000000000000000000000000000000000000000
   projectitel: {fileID: 0}
+  hand: {fileID: 0}
