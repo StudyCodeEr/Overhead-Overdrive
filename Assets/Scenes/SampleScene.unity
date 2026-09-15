@@ -5354,6 +5354,8 @@ MonoBehaviour:
   animCon:
   - {fileID: 9100000, guid: 35774fe59f3d9fb438a91325441245b6, type: 2}
   - {fileID: 22100000, guid: 54fce504de2099a478e2dab73e3008de, type: 2}
+  - {fileID: 22100000, guid: 301730c000a9c02498866d2fae01be9d, type: 2}
+  - {fileID: 22100000, guid: 2887a7f5905afa946b4e41283d191bf8, type: 2}
 --- !u!70 &112132077
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -7021,7 +7023,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 9.569445
+  orthographic size: 8.972222
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
