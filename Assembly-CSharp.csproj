@@ -74,10 +74,11 @@
     <Compile Include="Assets\Codes\Item.cs" />
     <Compile Include="Assets\Codes\Spawner.cs" />
     <Compile Include="Assets\Codes\LevelUp.cs" />
+    <Compile Include="Assets\Codes\AchiveManager.cs" />
     <Compile Include="Assets\Codes\ItemData.cs" />
     <Compile Include="Assets\Codes\Weapon.cs" />
     <Compile Include="Assets\Codes\Bullet.cs" />
-    <Compile Include="Assets\Codes\AchiveManager.cs" />
+    <Compile Include="Assets\Codes\AudioManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
