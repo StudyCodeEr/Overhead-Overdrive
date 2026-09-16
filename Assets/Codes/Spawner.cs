@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -38,7 +38,12 @@ public class Spawner : MonoBehaviour
     {
         GameObject enemy = GameManager.instance.pool.Get(0);
         enemy.transform.position = spamPoint[Random.Range(1, spamPoint.Length)].position;
-        enemy.GetComponent<Enemy>().Init(spawnData[level]);
+        
+        // Chọn ngẫu nhiên 1 con quái từ Level 0 đến Level hiện tại
+        int randomEnemyLevel = Random.Range(0, level + 1);
+
+        // Truyền dữ liệu của con quái vừa bốc thăm được vào
+        enemy.GetComponent<Enemy>().Init(spawnData[randomEnemyLevel]);
     }
 }
 
