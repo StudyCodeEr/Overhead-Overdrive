@@ -5467,7 +5467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: ebb7587c56cd73849b42f07cd33320d8, type: 3}
   m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
+  m_UIInputModule: {fileID: 803312527}
   m_DeviceLostEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -5478,8 +5478,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 1
-  m_DefaultControlScheme: Gamepad
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -12450,17 +12450,17 @@ MonoBehaviour:
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ebb7587c56cd73849b42f07cd33320d8, type: 3}
+  m_PointAction: {fileID: -7487202826587915976, guid: ebb7587c56cd73849b42f07cd33320d8, type: 3}
+  m_MoveAction: {fileID: 3037510108482053394, guid: ebb7587c56cd73849b42f07cd33320d8, type: 3}
+  m_SubmitAction: {fileID: 7733770426278644351, guid: ebb7587c56cd73849b42f07cd33320d8, type: 3}
+  m_CancelAction: {fileID: -930632212725462589, guid: ebb7587c56cd73849b42f07cd33320d8, type: 3}
+  m_LeftClickAction: {fileID: 1635961437295765412, guid: ebb7587c56cd73849b42f07cd33320d8, type: 3}
+  m_MiddleClickAction: {fileID: -6179444928321562625, guid: ebb7587c56cd73849b42f07cd33320d8, type: 3}
+  m_RightClickAction: {fileID: 2618345907854777096, guid: ebb7587c56cd73849b42f07cd33320d8, type: 3}
+  m_ScrollWheelAction: {fileID: 4452229823150442582, guid: ebb7587c56cd73849b42f07cd33320d8, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 835970656381075080, guid: ebb7587c56cd73849b42f07cd33320d8, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: -4904290447069243601, guid: ebb7587c56cd73849b42f07cd33320d8, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
@@ -26744,9 +26744,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d677f1681015749b15c436eec6d880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MovementRange: 10
+  m_MovementRange: 15
   m_DynamicOriginRange: 100
-  m_ControlPath: /<GamePad>/LeftStick
+  m_ControlPath: /<Gamepad>/leftStick
   m_Behaviour: 0
   m_UseIsolatedInputActions: 0
   m_PointerDownAction:
